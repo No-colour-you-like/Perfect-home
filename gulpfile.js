@@ -156,7 +156,7 @@ function css() {
     .pipe(browsersync.stream());
 }
 
-let build = gulp.series(clean, gulp.parallel(css, html, images, js)); // генерируем sass в css и добавляем новые файлы
+let build = gulp.series(clean, gulp.parallel(css, html, fonts ,images, js)); // генерируем sass в css и добавляем новые файлы
 let watch = gulp.parallel(build, watchFiles, browserSync); // сценарий выполнения функций
 
 exports.js = js;
