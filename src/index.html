@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfect Home</title>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,9 +18,9 @@
     <main class="main">
       <div class="main-bg">
         <header class="header">
-          <div class="header__logo">
-            <img src="#" alt="logo" class="logo">
-          </div>
+          <a href='index.html' class="header__logo">
+            <img src="img/logo.png" alt="logo" class="logo">
+          </a>
           <nav class="header__nav">
             <a href="#" class="header__link">Главная</a>
             <a href="#" class="header__link">О нас</a>
@@ -26,11 +28,13 @@
             <a href="#" class="header__link">Детали</a>
             <a href="#" class="header__link">Контакты</a>
           </nav>
-          <div class="header__lang">Язык</div>
+          <div class="header__lang">Язык (RU)</div>
         </header>
-        <a href="mailto:findeo@gmail.com" class="header__email">findeo@gmail.com</a>
-        <a href="tel:+08096843245789" class="header__phone">(+080) 9684 32 45 789</a>
-        <div class="scroll-down">Scroll Down</div>
+        <div class="header__links">
+          <a href="mailto:findeo@gmail.com" class="header__links-email">findeo@gmail.com</a>
+          <a href="tel:+08096843245789" class="header__links-phone">(+080) 9684 32 45 789</a>
+        </div>
+        <div class="header__scroll-down">Scroll Down</div>
       </div>
       <div class="main-window">
         <div class="main-photo">
@@ -41,7 +45,11 @@
               </p>
               <img src="#" alt="uppertitle-icon" class="main-photo__uppertitle-icon">
             </div>
-            <h1 class="main-photo__title">Лучший способ найти ваш идеальный дом.</h1>
+            <h1 class="main-photo__title">
+              Лучший Способ Найти 
+              <br>
+              Ваш Идеальный Дом.
+            </h1>
             <button class="main-photo__btn">Узнать больше</button>
           </div>
         </div>
