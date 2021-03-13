@@ -3,6 +3,7 @@
 
 body 
   font-family: 'Poiret One', sans-serif
+  position: relative
 
 input, button, textarea 
   font-family: Open Sans, sans-serif
@@ -35,6 +36,7 @@ img
   width: 1680px
   margin: 0 auto
   box-shadow: 0 0 10px rgba(#000, 0.3)
+  overflow-x: hidden
 
 $yellow-color: #edbb5f
 
@@ -87,3 +89,25 @@ $yellow-color: #edbb5f
     margin-left: 10px
     fill: $yellow-color
     transition: 1s
+
+.image-anim 
+  transform: scale(2.5) 
+  transition: 1s 
+
+.image-anim-remove 
+  transition: 0.3s
+
+.dark-bg 
+  display: none
+  position: absolute
+  top: 0 
+  left: 0
+  width: 100% 
+  min-height: 100%
+  background-color: rgba(#7e7e7e, 0.9)
+  z-index: 8
+
+
+
+
+  
