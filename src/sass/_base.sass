@@ -4,9 +4,30 @@
 .image-anim-1
   transition: 2s
   opacity: 1
-  transform: translateX(0)
+  transform: translate(0, 0)
 
 .text-anim-1
   transition: 2s
   opacity: 1
-  transform: translateY(0)
+  transform: translate(0, 0)
+
+.opacity-visible
+  opacity: 1
+  transition: 1s
+
+.opacity-hide 
+  opacity: 0
+  transition: 1s 
+
+.info-transform-hide
+  max-height: 0
+  opacity: 0
+  transition: 0s 
+
+.info-transform-open
+  max-height: 1200px
+  opacity: 1
+  transition: max-height 5s ease, opacity 3s ease
+
+
+
