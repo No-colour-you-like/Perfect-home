@@ -109,6 +109,7 @@ const mainBlock = document.querySelector('.main'),
   agentImageOne = document.querySelector('.agent__image-1'),
   agentImageTwo = document.querySelector('.agent__image-2'),
   agentBlock = document.querySelector('.agent'),
+  processBlock = document.querySelector('.process'),
   processImageOne = document.querySelector('.process__img-1'),
   processImageTwo = document.querySelector('.process__img-2');
 
@@ -159,19 +160,67 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
   
+// Scroll to block by anchor
 
-let headerLink = document.querySelectorAll('.header__anchor-link');
+let headerLink = document.querySelectorAll('.header__anchor-link'),
+  headerScrollDown = document.querySelector('.header__scroll-down'),
+  mainBtn = document.querySelector('.main-btn');
 
-headerLink.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    stepsBlock.scrollIntoView({
+  let scrollToBlock = (block) => {
+    block.scrollIntoView({
       block: 'start',
       behavior: 'smooth'
     });
+  };
 
+  headerScrollDown.addEventListener('click', (e) => {
+    e.preventDefault(); 
+    scrollToBlock(footer);
   });
-});
+
+  mainBtn.addEventListener('click', (e) => {
+    e.preventDefault(); 
+    scrollToBlock(welcomeBlock);
+  });
+
+  
+  headerLink.forEach((link, i) => {
+
+    headerLink[i].addEventListener('click', (e) => {
+      e.preventDefault();
+
+      switch (i) {
+        case 0:
+          scrollToBlock(welcomeBlock);
+          break;
+        case 1: 
+          scrollToBlock(stepsBlock);
+          break;
+        case 2: 
+          scrollToBlock(agentBlock);
+          break;
+        case 3: 
+          scrollToBlock(processBlock);
+          break; 
+      } 
+    });
+  });
+
+
+//Change language 
+
+let headerLang = document.querySelector('.header__lang'),
+  headerLinkFirst = document.querySelector('.header__link');
+
+
+
+
+
+
+
+
+
+  
 
 
 
