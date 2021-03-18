@@ -98,7 +98,7 @@ footerImg.forEach(item => {
 });
 
 // Scroll animation
-const mainBlock = document.querySelector('.main'),
+let mainBlock = document.querySelector('.main'),
   welcomeImage = document.querySelector('.welcome__image'),
   welcomeText = document.querySelector('.welcome__text'),
   welcomeBlock = document.querySelector('.welcome'),
@@ -116,7 +116,7 @@ const mainBlock = document.querySelector('.main'),
 document.addEventListener('DOMContentLoaded', () => {
 
   if(document.body.clientWidth >= 992) {
-    
+
     window.addEventListener('scroll', () => {
 
       let scrollTop = window.scrollY,
@@ -161,7 +161,14 @@ document.addEventListener('DOMContentLoaded', () => {
         processImageTwo.classList.add('image-anim-1');
       }
     });
-  }
+  } else (
+    welcomeText.style.opacity = '1',
+    stepsImageOne.style.opacity = '1',
+    stepsText.forEach(steps => {
+      steps.style.opacity = '1';
+    }),
+    agentImageOne.style.opacity = '1'
+  )
 });
   
 // Scroll to block by anchor
@@ -283,8 +290,6 @@ contactsModalClose.addEventListener('click', () => {
     contactModal.classList.remove('display-block');
     hideBg.classList.remove('opacity-hide');
   }, 900);
-
-  
 
 });
 
