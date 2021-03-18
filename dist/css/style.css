@@ -1488,13 +1488,18 @@ img {
     font-size: 30px;
   }
   .header__link, .header__anchor-link {
-    font-size: 30px;
+    font-size: 32px;
+    margin-right: 20px;
+  }
+  .header {
+    padding-right: 0;
   }
   .header__nav {
     width: 1000px;
   }
   .logo {
-    width: 200px;
+    width: 150px;
+    margin-right: 50px;
   }
   .main-photo__uppertitle-text {
     font-size: 40px;
@@ -1514,26 +1519,35 @@ img {
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  .welcome__uppertitle {
-    font-size: 35px;
-  }
   .welcome__title, .steps__contact-title, .steps__steps-title, .agent__title, .agent__title, .invest__title, .process__info-title, .clients__title, .footer__subscr-title {
     font-size: 70px;
   }
-  .welcome__info, .steps__contact-subtitle, .steps__steps-text, .steps__step-name, .agent__subtitle, .agent__video-text, .agent__image-text, .invest__info, .process__info-text, .footer__subscr-uppertitle {
+  .welcome__info, .welcome__uppertitle, .steps__contact-subtitle, .steps__steps-text, .steps__step-name, .agent__subtitle, .agent__video-text, .agent__image-text, .invest__info, .process__info-text, .footer__subscr-uppertitle, .home__text-info {
     font-size: 35px;
     font-weight: 600;
   }
+  .home__text {
+    width: 800px;
+    left: 115px;
+    top: 5%;
+  }
   .welcome {
-    height: 1700px;
+    height: 1900px;
+  }
+  .welcome__image {
+    position: relative;
+    top: -300px;
+  }
+  .welcome__info:last-child {
+    margin-left: 100px;
   }
   .steps__contact {
-    height: 1100px;
+    height: 1200px;
     padding: 50px 20px 50px 150px;
   }
   .steps__steps {
     padding-top: 210px;
-    bottom: -80px;
+    bottom: -200px;
   }
   .steps__steps-text {
     max-width: 900px;
@@ -1604,12 +1618,25 @@ img {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .body-wrapper {
     width: 1300px;
   }
+  .header__lang {
+    font-size: 30px;
+  }
+  .header__links {
+    font-size: 25px;
+    right: -190px;
+    top: 500px;
+  }
+  .header__scroll-down {
+    font-size: 25px;
+    bottom: -150px;
+  }
   .main-photo {
     width: 1200px;
+    height: 1100px;
   }
   .welcome__img {
     height: auto;
