@@ -12,6 +12,8 @@
     padding-right: 50px
   .main-photo__text
     left: 10%
+  .footer__subscr-text
+    margin: 0 50px
 
 @media (max-width:1300px)
   .header
@@ -29,6 +31,7 @@
     left: 100px
   .process__info-top
     left: 700px
+
 
 
 @media (max-width:1200px) 
@@ -59,4 +62,137 @@
     width: 380px
     height: 600px
 
+@media (max-width: 992px) 
+  .main
+    margin-bottom: 0px
+  .header
+    &__lang 
+      &:before 
+        display: none
+    &__link, &__anchor-link
+      margin-right: 20px
+  .footer__bottom
+    flex-wrap: wrap
+  .footer
+    &__info
+      text-align: center
+      width: 100%
+      margin-top: 50px
+    &__logo 
+      margin: 0 auto 20px
+    &__contacts 
+      width: 200px
+  .welcome
+    &__title 
+      font-size: 30px
+    &__info
+      font-size: 15px
+      width: 320px
+      &:last-child
+        margin-left: 50px
+  .steps
+    height: 1500px
+    &__img-1
+      top: 50px
+      width: 300px
+      height: 350px
+    &__img-2
+      width: 280px
+      height: 450px
+      left: auto 
+      right: 10%
+      top: 60px
+    &__contact
+      position: relative
+      height: 800px
+      padding-bottom: 50px
+      top: 0
+      background: transparent
+      z-index: 10
+      &-title 
+        color: #000
+        background: rgba(#fff, 0.5)
+        box-shadow: 0 0 20px 10px rgba(#fff, 0.5)
+        z-index: 10
+      &-subtitle 
+        position: relative
+        left: 50px
+        padding: 20px
+        font-weight: 600
+        color: #000
+        background: rgba(#fff, 0.5)
+        box-shadow: 0 0 20px 10px rgba(#fff, 0.5)
+  .agent
+    height: 500px
+    &__info
+      top: 100px
+    &__image-1
+      left: auto 
+      right: 5%
+      transform: translate(0, 0)
+      z-index: -1
+    &__img-1 
+      width: 300px
+      height: 400px
+    &__subtitle 
+      background: rgba(#fff, 0.5)
+      box-shadow: 0 0 20px 10px rgba(#fff, 0.5)
+  .process
+    &__info-top
+      padding: 20px
+      background: rgba(#fff, 0.5)
+      box-shadow: 0 0 20px 10px rgba(#fff, 0.5)
+      left: auto
+      right: 5%
+    &__img-1
+      z-index: -1
+    &__img-2
+      transform: translate(0, 0)
+      left: auto 
+      right: 5%
+    &__info
+      &-bottom 
+        z-index: -1 
+      &-title, &-text
+        position: relative
+        text-shadow: 0 0 10px #000
+        z-index: 10
+  .clients
+    &__title 
+      margin: 0 20px 50px
+    &__clients 
+      margin-left: 20px
+      margin-right: 20px
+  .footer
+    &__subscr 
+      flex-direction: column
+      margin-bottom: 50px
+      &-text 
+        margin-bottom: 20px
+    &__divide 
+        margin-bottom: 50px
+      
+
+@media (max-width: 768px) 
+  .header
+    position: relative
+    &__nav 
+      width: auto
+      position: absolute
+      flex-direction: column
+      align-items: center
+      top: 100px
+      right: 5%
+      margin: 0
+      z-index: 30
+    &__link, &__anchor-link
+      font-size: 20px 
+      margin: 0 0 10px
+    &__anchor-link 
+      &:nth-of-type(5)
+        margin-bottom: 0
+    &__lang 
+      margin-left: auto
+
+      
 

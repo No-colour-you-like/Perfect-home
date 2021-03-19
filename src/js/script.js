@@ -43,7 +43,7 @@ mainHomeBtn.addEventListener('click', () => {
 
 
 // Footer Slider
-const footer = document.querySelector('.footer'),
+const footerImgWrapper = document.querySelector('.footer__images-wrapper'),
   footerImages = document.querySelector('.footer__images-wrapper'),
   footerImage = document.querySelectorAll('.footer__top-image'),
   sliderPrev = document.querySelector('.footer__images-prev'),
@@ -51,7 +51,7 @@ const footer = document.querySelector('.footer'),
   
 
 let offset = 0,
-  width = window.getComputedStyle(footer).width;
+  width = window.getComputedStyle(footerImgWrapper).width;
 
 footerImage.forEach(item => {
   item.style.width = (width.slice(0, width.length - 2) / 5 )+ 'px';
@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else (
     welcomeText.style.opacity = '1',
     stepsImageOne.style.opacity = '1',
+    stepsImageTwo.style.opacity = '1',
     stepsText.forEach(steps => {
       steps.style.opacity = '1';
     }),
