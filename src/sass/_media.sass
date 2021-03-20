@@ -18,6 +18,10 @@
 @media (max-width:1300px)
   .header
     padding-right: 20px
+    &__links 
+      display: none
+    &__scroll-down
+      display: none
   .welcome__img
     height: 500px
   .agent__image-2
@@ -31,6 +35,9 @@
     left: 100px
   .process__info-top
     left: 700px
+  .image-anim 
+    transform: scale(1.4)
+
 
 
 
@@ -65,6 +72,8 @@
 @media (max-width: 992px) 
   .main
     margin-bottom: 0px
+  .main-photo__uppertitle-text 
+    font-size: 20px
   .header
     &__lang 
       &:before 
@@ -138,12 +147,6 @@
       background: rgba(#fff, 0.5)
       box-shadow: 0 0 20px 10px rgba(#fff, 0.5)
   .process
-    &__info-top
-      padding: 20px
-      background: rgba(#fff, 0.5)
-      box-shadow: 0 0 20px 10px rgba(#fff, 0.5)
-      left: auto
-      right: 5%
     &__img-1
       z-index: -1
     &__img-2
@@ -151,12 +154,20 @@
       left: auto 
       right: 5%
     &__info
+      &-top
+        padding: 20px
+        background: rgba(#fff, 0.5)
+        box-shadow: 0 0 20px 10px rgba(#fff, 0.5)
+        left: auto
+        right: 5%
       &-bottom 
         z-index: -1 
       &-title, &-text
         position: relative
-        text-shadow: 0 0 10px #000
         z-index: 10
+    &__contacts-link
+      position: relative
+      z-index: 10
   .clients
     &__title 
       margin: 0 20px 50px
@@ -175,24 +186,168 @@
 
 @media (max-width: 768px) 
   .header
-    position: relative
+    min-height: 80px
+    &__hamburger  
+      display: block
     &__nav 
       width: auto
-      position: absolute
+      height: 100%
+      position: fixed
       flex-direction: column
       align-items: center
-      top: 100px
-      right: 5%
-      margin: 0
+      justify-content: center
+      top: 0
+      right: 0
+      margin: 0 auto
+      padding: 20px
+      transform: translateX(120%)
       z-index: 30
+      background-color: rgba(#242424, 0.7)
+      transition: 1s
     &__link, &__anchor-link
       font-size: 20px 
       margin: 0 0 10px
+      &:before, &:after 
+        display: none
     &__anchor-link 
       &:nth-of-type(5)
         margin-bottom: 0
     &__lang 
       margin-left: auto
+    &__close-menu 
+      position: relative
+      display: flex
+      align-items: center
+      width: 30px
+      height: 30px
+      margin-top: 20px
+      &-line  
+        position: absolute
+        width: 30px
+        height: 3px
+        background-color: #fff
+        transform: rotate(45deg) translateY(-30%)
+        &:last-child
+          transform: rotate(-45deg)
+  .main-window 
+    max-height: 550px
+    top: 80px
+  .main-bg 
+    height: 575px
+  .main-photo__uppertitle-icon 
+    display: none
+  .main-photo__title 
+    font-size: 40px
+  .housename
+    padding: 10px
+    &__name 
+      font-size: 15px
+  .home
+    &__text-title
+      font-size: 20px
+      margin-bottom: 10px
+    &__text-place 
+      font-size: 15px
+      margin-bottom: 10px
+    &__text-info 
+      font-size: 12px
+  .welcome
+    &__text
+      width: 500px
+    &__title 
+      font-size: 25px
+  .steps
+    height: 1320px
+    &__img-2 
+      top: 100px
+    &__contact
+      width: 640px
+      padding-left: 20px
+      &-subtitle 
+        left: 0
+    &__steps 
+      width: auto
+      height: 600px
+      padding: 30px 0 20px 50px
+      bottom: auto
+      &-title 
+        font-size: 35px
+      &-text 
+        font-size: 20px
+    &__step
+      transform: translate(0, 0)
+      &-3 
+        margin-left: 0
+  .agent 
+    height: 300px
+    &__image-1
+      display: none
+  .process
+    margin-bottom: 50px
+    &__info-black
+      width: 100%
+      height: 600px
+      padding: 20px 0 30px 30px
+  .clients 
+    margin-bottom: 400px
+  .footer 
+    padding-top: 150px
+    &__images-wrapper 
+      padding-left: 50px
+    &__subscr
+      &-text 
+        text-align: center
+        margin: 0 0 20px
+      &-title 
+        font-size: 30px
+    &__links
+      text-align: center
+      width: 50%
+    &__contacts 
+      text-align: center
+      width: 100%
+      margin-top: 50px
+      &-name 
+        display: block
+        text-align: center
 
-      
+@media (max-width: 576px)
+  .housename
+    &__name 
+      text-align: center
+    &__number
+      display: none
+  .welcome 
+    padding-top: 150px
+    &__title 
+      font-size: 20px
+    &__text 
+      width: 100%
+    &__info 
+      &:last-child
+        display: none
+  .steps
+    &__img-1
+      top: 250px
+    &__img-2 
+      top: 230px
+    &__contact
+      width: 100%
+      padding-right: 50px
+      &-title 
+        font-size: 20px
+      &-subtitle 
+        font-size: 15px
+    &__steps
+      width: 100%
+      &-title 
+        font-size: 20px
+      &-text 
+        font-size: 15px
+    &__step
+      &-2
+        margin-left: 50px
+      &-name
+        font-size: 15px
+
 
