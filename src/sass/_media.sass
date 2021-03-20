@@ -39,11 +39,12 @@
     transform: scale(1.4)
 
 
-
-
 @media (max-width:1200px) 
+  .header
+    &__link, &__anchor-link
+      margin-right: 5px
   .logo 
-    margin-right: 50px
+    margin-right: 60px
   .main 
     margin-bottom: 200px
   .welcome__img 
@@ -80,17 +81,6 @@
         display: none
     &__link, &__anchor-link
       margin-right: 20px
-  .footer__bottom
-    flex-wrap: wrap
-  .footer
-    &__info
-      text-align: center
-      width: 100%
-      margin-top: 50px
-    &__logo 
-      margin: 0 auto 20px
-    &__contacts 
-      width: 200px
   .welcome
     &__title 
       font-size: 30px
@@ -181,7 +171,17 @@
       &-text 
         margin-bottom: 20px
     &__divide 
-        margin-bottom: 50px
+      margin-bottom: 50px
+    &__info
+      text-align: center
+      width: 100%
+      margin-top: 50px
+    &__logo 
+      margin: 0 auto 20px
+    &__contacts 
+      width: 200px
+    &__bottom
+      flex-wrap: wrap
       
 
 @media (max-width: 768px) 
@@ -279,7 +279,8 @@
       &-3 
         margin-left: 0
   .agent 
-    height: 300px
+    height: 600px
+    margin-bottom: 0
     &__image-1
       display: none
   .process
@@ -290,6 +291,11 @@
       padding: 20px 0 30px 30px
   .clients 
     margin-bottom: 400px
+    &__clients 
+      grid-template-columns: repeat(2, 1fr) 
+      grid-template-rows: repeat(4, 1fr)
+      grid-column-gap: 20px
+      grid-row-gap: 20px
   .footer 
     padding-top: 150px
     &__images-wrapper 
@@ -311,14 +317,23 @@
         display: block
         text-align: center
 
+
 @media (max-width: 576px)
+  .header
+    padding: 0 20px
   .housename
     &__name 
       text-align: center
     &__number
       display: none
+  .home
+    &__text
+      width: 300px
+      top: 20px
   .welcome 
-    padding-top: 150px
+    height: 600px
+    margin-bottom: 50px
+    padding-top: 0
     &__title 
       font-size: 20px
     &__text 
@@ -342,6 +357,7 @@
       width: 100%
       &-title 
         font-size: 20px
+        margin-bottom: 20px
       &-text 
         font-size: 15px
     &__step
@@ -349,5 +365,44 @@
         margin-left: 50px
       &-name
         font-size: 15px
-
-
+  .agent
+    padding: 0 30px 0 
+    margin-bottom: 50px
+    &__info 
+      width: auto
+    &__title 
+      font-size: 20px
+      margin-bottom: 20px
+    &__subtitle 
+      font-size: 15px
+      margin-bottom: 20px
+  .process 
+    height: 1200px
+    &__info-top
+      top: 0
+    &__img-1
+      height: 500px
+    &__img-2
+      top: auto 
+      bottom: -40px
+    &__info-text
+      font-size: 15px
+  .clients 
+    margin-bottom: 50px
+  .footer
+    padding: 20px
+    height: 100%
+    &__images
+      display: none
+      &-prev, &-next 
+        display: none    
+  .contacts-modal
+    width: 300px
+    height: 400px
+    &__title
+      font-size: 20px
+    &__name
+      font-size: 15px
+      margin-bottom: 10px
+    &__textarea 
+      height: 50px
