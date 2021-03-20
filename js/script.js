@@ -1,3 +1,17 @@
+//Header hamburger menu 
+
+const headerHamburger = document.querySelector('.header__hamburger'),
+  headerMenuClose = document.querySelector('.header__close-menu'),
+  headerNav = document.querySelector('.header__nav');
+
+headerHamburger.addEventListener('click', () => {
+  headerNav.classList.add('header-menu-open')
+});
+
+headerMenuClose.addEventListener('click', () => {
+  headerNav.classList.remove('header-menu-open')
+});
+
 //Main images change
 
 const mainPhoto = document.querySelectorAll('.main-photo__img'),
