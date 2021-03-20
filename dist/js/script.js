@@ -194,7 +194,7 @@ let headerLink = document.querySelectorAll('.header__anchor-link'),
 
   let scrollToBlock = (block) => {
     block.scrollIntoView({
-      block: 'start',
+      block: 'end',
       behavior: 'smooth'
     });
   };
@@ -209,7 +209,6 @@ let headerLink = document.querySelectorAll('.header__anchor-link'),
     scrollToBlock(welcomeBlock);
   });
 
-  
   headerLink.forEach((link, i) => {
 
     headerLink[i].addEventListener('click', (e) => {
