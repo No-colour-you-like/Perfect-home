@@ -206,7 +206,7 @@ let headerLink = document.querySelectorAll('.header__anchor-link'),
 
   headerScrollDown.addEventListener('click', (e) => {
     e.preventDefault(); 
-    scrollToBlock(footer);
+    scrollToBlock(footerImgWrapper);
   });
 
   mainBtn.addEventListener('click', (e) => {
