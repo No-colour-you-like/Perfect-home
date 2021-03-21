@@ -57,6 +57,7 @@ mainHomeBtn.addEventListener('click', () => {
 
 
 // Footer Slider
+
 const footerImgWrapper = document.querySelector('.footer__images-wrapper'),
   footerImages = document.querySelector('.footer__images-wrapper'),
   footerImage = document.querySelectorAll('.footer__top-image'),
@@ -72,6 +73,7 @@ footerImage.forEach(item => {
 });
 
 sliderNext.addEventListener('click', () => {
+
   if (offset == (+width.slice(0, width.length - 2) / 5) * (footerImage.length - 3)) {
     offset = 0;
   } else {
@@ -82,6 +84,7 @@ sliderNext.addEventListener('click', () => {
 });
 
 sliderPrev.addEventListener('click', () => {
+
   if (offset == 0) {
     offset = (+width.slice(0, width.length - 2) / 5) * (footerImage.length - 3);
   } else {
@@ -92,6 +95,7 @@ sliderPrev.addEventListener('click', () => {
 });
 
 // Open Image in Slider
+
 const footerImg = document.querySelectorAll('.footer__top-img');
 
 footerImg.forEach(item => {
@@ -112,6 +116,7 @@ footerImg.forEach(item => {
 });
 
 // Scroll animation
+
 let mainBlock = document.querySelector('.main'),
   welcomeImage = document.querySelector('.welcome__image'),
   welcomeText = document.querySelector('.welcome__text'),
@@ -134,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
 
       let scrollTop = window.scrollY,
-        mainCenter = mainBlock.offsetHeight / 2,
+        mainCenter = mainBlock.offsetHeight / 5,
         welcomeCenter = mainBlock.offsetHeight + welcomeBlock.offsetHeight / 2;
         stepsCenter = mainBlock.offsetHeight + welcomeBlock.offsetHeight + stepsBlock.offsetHeight / 2;
         stepsBottom = mainBlock.offsetHeight + welcomeBlock.offsetHeight + stepsBlock.offsetHeight;
@@ -143,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (scrollTop >= mainCenter) { 
         welcomeImage.classList.add('image-anim-1');
         welcomeText.classList.add('text-anim-1');
-      } 
+      }
   
       if (scrollTop >= welcomeCenter) { 
         stepsImageOne.classList.add('image-anim-1');
