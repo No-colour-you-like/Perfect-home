@@ -1589,10 +1589,11 @@ img {
     z-index: 10;
   }
   .steps__contact-title {
+    padding: 15px;
     color: #000;
-    background: rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
-            box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0 20px 10px #fff;
+            box-shadow: 0 0 20px 10px #fff;
     z-index: 10;
   }
   .steps__contact-subtitle {
