@@ -1589,7 +1589,7 @@ img {
     z-index: 10;
   }
   .steps__contact-title {
-    padding: 15px;
+    padding: 10px;
     color: #000;
     background: rgba(255, 255, 255, 0.8);
     -webkit-box-shadow: 0 0 20px 10px #fff;
